@@ -1,10 +1,8 @@
 import react from 'react';
 import React, {useState, useEffect} from 'react';
 import './dogs.css'
-import IndivudualDog from './IndividualDog'
-import {Link} from 'react-router-dom';
 
-const DogCard = ({ setEachDog, index, dogList, dog}) => {
+const DogCard = ({ dog}) => {
 
    
     return (
@@ -25,7 +23,7 @@ const DogCard = ({ setEachDog, index, dogList, dog}) => {
             </div>
 
         </div>
-    )
+    );
 }
 
 export default DogCard;

@@ -15,19 +15,25 @@ const Welcome = ({fetchDogData}) => {
 
             <br></br>
 
-            
-            <button className="buttons">Present Dogs</button>
-
-            <Link to="/absentdogs">
-                <button className="buttons" onClick={fetchDogData}>Absent Dogs</button>
+           
+            <Link to="/dogs">
+                <button className="buttons" onClick={fetchDogData}>Dogs</button>
             </Link>
 
             <Link to="/owners">
                 <button className="buttons" onClick={fetchDogData}>Dog Owners</button>
             </Link>
-            <Link to="/dogs">
-                <button className="buttons" onClick={fetchDogData}>Dogs</button>
+            
+            <Link to="/presentdogs">
+                <button className="buttons" onClick={fetchDogData}>Present Dogs</button>
             </Link>
+
+            <Link to="/absentdogs">
+                <button className="buttons" onClick={fetchDogData}>Absent Dogs</button>
+            </Link>
+
+           
+         
         </div>
     );
 }

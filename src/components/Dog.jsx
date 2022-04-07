@@ -21,7 +21,7 @@ const Dog = () => {
 
     useEffect(() => {
         setDogInfo(dogInfo)
-        console.log('Hundarna: ' + dogInfo);
+         
     }, [dogInfo]);
 
 

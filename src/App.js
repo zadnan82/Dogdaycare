@@ -1,14 +1,12 @@
 import react, { useState } from 'react';
-import ReactDOM from 'react-dom'
 import './App.css';
 import Welcome from './components/Welcome';
 import Owners from './components/Owners';
-import EachOwner from './components/EachOwner';
 import {HashRouter as Router, Route , Routes} from 'react-router-dom'
-import EachDog from './components/IndividualDog';
 import Dogs from './components/Dogs';
 import IndividualDog from './components/IndividualDog';
 import AbsentDogs from './components/AbsentDogs';
+import PresentDogs from './components/PresentDogs';
 
 function App() {
 
@@ -18,13 +16,13 @@ function App() {
   const [daycareData, setDaycareData] = useState(null);
   const [eachDog, setEachDog] = useState(null);
 
-    const fetchData = async () => {
+    const fetchDogData = async () => {
         fetch('https://api.jsonbin.io/b/62457a721a1b610f08488545')
             .then(response => response.json())
-            .then((jsonData) => {
+            .then((data) => {
 
-                setDaycareData(jsonData);
-                console.log('Datan med fetch' , jsonData)
+                setDaycareData(data);
+                
             })
     }
 
@@ -40,21 +38,30 @@ function App() {
               <Routes>
   
               <Route exact path="/" element= {
-              <Welcome fetchData={() => fetchData()}/>
+              <Welcome fetchDogData={() => fetchDogData()}/>
               } /> 
                  
-  
-                 <Route path="/absentdogs" element= {
-                  <AbsentDogs daycareData={daycareData} setEachDog={setEachDog}/>
+
+                 <Route path="/dogs" element= {
+                  <Dogs daycareData={daycareData} setEachDog={setEachDog}/>
                 }/>
 
                 <Route path="/owners" element= {
                   <Owners daycareData={daycareData} setEachDog={setEachDog}/>
                 }/>
 
-                  <Route path="/dogs" element= {
-                  <Dogs daycareData={daycareData} setEachDog={setEachDog}/>
+
+                 <Route path="/presentdogs" element= {
+                  <PresentDogs daycareData={daycareData} setEachDog={setEachDog}/>
                 }/>
+
+                 <Route path="/absentdogs" element= {
+                  <AbsentDogs daycareData={daycareData} setEachDog={setEachDog}/>
+                }/>
+
+               
+
+                
                   
                
   

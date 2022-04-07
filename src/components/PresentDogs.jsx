@@ -4,7 +4,7 @@ import './dogs.css'
 import React, { useState, useEffect } from 'react';
 import DogCard from './DogCard';
 
-const AbsentDogs = ({ daycareData, setEachDog }) => {
+const PresentDogs = ({ daycareData, setEachDog }) => {
     const [clickedIndex, setClickedIndex] = useState(null);
 
     return (
@@ -13,7 +13,7 @@ const AbsentDogs = ({ daycareData, setEachDog }) => {
             <div className="dog-info">
                 {daycareData && daycareData.map((member, index) => {
 
-                    if (member.present == false) {
+                    if (member.present == true) {
                         return (
                             <div className="dog" key={index} onClick={() => { setEachDog(member) }}>
                                 <Link to="/individualdog">
@@ -29,4 +29,4 @@ const AbsentDogs = ({ daycareData, setEachDog }) => {
     );
 }
 
-export default AbsentDogs;
+export default PresentDogs;

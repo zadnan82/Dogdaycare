@@ -4,7 +4,7 @@ import './owners.css'
 import IndividualDog from './IndividualDog'
 import {Link} from 'react-router-dom';
 
-const EachOwner = ({dogList, owner, index, setEachDog}) => {
+const EachOwner = ({list, owner, index, setEachDog}) => {
 
 
     return (

@@ -1,6 +1,6 @@
 import react from 'react'
 import React, {useState, useEffect} from 'react';
-import EachDog from './DogList';
+import List from './List';
 import './owners.css'
 import EachOwner from './EachOwner'
 import {Link} from 'react-router-dom';
@@ -21,7 +21,7 @@ const Owners = ({daycareData, setEachDog}) => {
                                 <EachOwner
                                 setIndex={() => setCklickedIndex(index)}
                                 index={index}
-                                dogList={daycareData}
+                                list={daycareData}
                                 owner={member.owner} />
                                 </Link>
                             </div>
