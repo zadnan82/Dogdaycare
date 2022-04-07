@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/dogdaycare/static/css/main.63818389.css",
-    "main.js": "/dogdaycare/static/js/main.32ae6e56.js",
+    "main.css": "/dogdaycare/static/css/main.49566a0c.css",
+    "main.js": "/dogdaycare/static/js/main.7cb36a9e.js",
     "static/js/787.a8adaa9e.chunk.js": "/dogdaycare/static/js/787.a8adaa9e.chunk.js",
     "index.html": "/dogdaycare/index.html",
-    "main.63818389.css.map": "/dogdaycare/static/css/main.63818389.css.map",
-    "main.32ae6e56.js.map": "/dogdaycare/static/js/main.32ae6e56.js.map",
+    "main.49566a0c.css.map": "/dogdaycare/static/css/main.49566a0c.css.map",
+    "main.7cb36a9e.js.map": "/dogdaycare/static/js/main.7cb36a9e.js.map",
     "787.a8adaa9e.chunk.js.map": "/dogdaycare/static/js/787.a8adaa9e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63818389.css",
-    "static/js/main.32ae6e56.js"
+    "static/css/main.49566a0c.css",
+    "static/js/main.7cb36a9e.js"
   ]
 }
