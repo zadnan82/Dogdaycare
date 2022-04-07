@@ -5,22 +5,18 @@ import {Link} from 'react-router-dom';
 import DogCard from './DogCard';
 
 const Dogs = ({ daycareData, setEachDog}) => {
-    const [clickedIndex, setClickedIndex] = useState(null);
   
-   
-   
   
     return (
         <div className="cardContainer">
 
-                <div className="dog-info">
-                    {daycareData && daycareData.map((member, index) => {
+                <div >
+                    {daycareData && daycareData.map((member) => {
                         
                         return (
-                            <div className="dog" key={index} onClick={() => {setEachDog(member)}}>
+                            <div  onClick={() => {setEachDog(member)}}>
                                 <Link to="/individualdog">
-                                <DogCard
-                                dog={member} />
+                                <DogCard dog={member} />
                                 </Link>
                             </div>
                         );

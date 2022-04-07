@@ -11,9 +11,9 @@ const DogCard = ({ dog}) => {
             <div className="dogInfo">
            
             <img className="profpic" src={dog.img}
-                alt={"The dog " , dog.name , "img goes here"}
-                width="50vw"
-                height="50vw">
+                alt={"The dog"}
+                width="60vw"
+                height="60vw">
             </img>
         
         

@@ -5,8 +5,7 @@ import React, { useState, useEffect } from 'react';
 import DogCard from './DogCard';
 
 const AbsentDogs = ({ daycareData, setEachDog }) => {
-    const [clickedIndex, setClickedIndex] = useState(null);
-
+   
     return (
         <div className="cardContainer">
 
@@ -17,8 +16,7 @@ const AbsentDogs = ({ daycareData, setEachDog }) => {
                         return (
                             <div className="dog" key={index} onClick={() => { setEachDog(member) }}>
                                 <Link to="/individualdog">
-                                    <DogCard
-                                        dog={member} />
+                                    <DogCard dog={member} />
                                 </Link>
                             </div>
                         );

@@ -1,138 +1,81 @@
-.doggieCard {
-    border-radius: 1em;
-    background-color: #ecf0f8;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    padding: 10px;
-    padding: 10px;
-    font-size: calc(10px + 1vmin);
-}
-
-
-.profpic1 {
-    border: 2px solid #d9dfee;
-    background-color: #5387f5;
-    padding: 1px;
-    filter: drop-shadow(8px 8px 10px gray);  
-    }
-    
-
-.profpic {
-    border-radius: 50%;
-    filter: drop-shadow(8px 8px 10px gray);  
-    }
-    
-
-img {
-    border: 2px solid #d9dfee;
-    background-color: #5387f5;
-    padding: 1px;
-    
-}
-
-.titles, .dogInfo {
-    display: flex;
-    flex-direction: column;
-}
-
-.dogInfo {
-    display: grid;
-    text-align: center;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-div.dog {
-    text-decoration: none;
-}
-
-@media (max-width: 450px) {
-
-    
-
-
-} 
-.flexi { 
-    border: 2px solid rgb(250, 246, 247);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
- 
-}
-
-
-
-div.dogInfo {
-    border: 2px solid #343944;
-    background-color: #2cac05;
-    color: rgb(15, 14, 14);
-    text-decoration: none;
-    padding: 10px;
-    margin-top: 1vw;
-    grid-gap: 0.5em;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5em;
-    border-radius: 15px;
-    width: 100%;
-    height: 7em;
-
-}
-
-
-div.dogInfo2 {
-    border: 2px solid #343944;
-    background-color: #2cac05;
-    color: rgb(15, 14, 14);
-    text-decoration: none;
-    padding: 10px;
-    margin-top: 1vw;
-    grid-gap: 0.5em;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5em;
-    border-radius: 15px;
-    width: 100%;
-    height: 100%;
-
-}
-
-
-.cardContainer div {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(1, 1fr);
-}
-
-@media (min-width: 450px) {
-    .cardContainer div {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        grid-gap: 0.2vw;
-
-    }
-
-    .cardContainer {
-        padding: 20px;
-    }
-
-} 
-
-@media (min-width: 550px) {
-    .cardContainer div{
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        justify-content: center;
-    }
-
-
-} 
 
 @media (min-width: 1020px) {
     .cardContainer div{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         align-items: center;
         justify-content: center;
     }
 }
+
+div.dogInfo {
+    font-size: calc(5px + 2vmin);
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 1vw;
+    grid-gap: 0.5em;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border-radius: 15px;
+    width: 100%;
+    height: 5em;
+    font-size: calc(5px + 2vmin);
+}
+
+.dogInfo:hover{
+    transform: scale(1.5, 1.5);
+    background-color: white;
+    color: black;
+}
+
+.profpic {
+    border-radius: 30%;
+    filter: drop-shadow(8px 8px 10px black);  
+    }
+    
+
+    .profpic1 {
+        border-radius: 10%;
+        border: 6px solid #d9dfee;
+        padding: 20px 20px;
+        background-color: transparent;
+        filter: drop-shadow(8px 8px 10px black);  
+        }
+
+        .profpic1:hover{
+            transform: scale(2, 2);
+        }
+    
+        .dogBox {
+            display: flex;
+            flex-direction: row;
+            font-size: calc(5px + 2vmin);
+            background: transparent;
+            color: whitesmoke;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 90px 30px;
+        }
+
+        
+
+.doggieCard {
+    border-radius: 1em;
+    font-size: calc(5px + 2vmin);
+    background: transparent;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 20px 30px;
+}
+
+
+   
+

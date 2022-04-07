@@ -1,28 +1,22 @@
 import react from 'react'
 import React, {useState, useEffect} from 'react';
-import List from './List';
 import './owners.css'
 import EachOwner from './EachOwner'
 import {Link} from 'react-router-dom';
 
 const Owners = ({daycareData, setEachDog}) => {
-    const [clickedIndex, setCklickedIndex] = useState(null);
-
+   
 
 
     return (
         <div className="cardContainer">
 
-                <div className="dog-info">
+                <div >
                     {daycareData && daycareData.map((member, index) => {
                         return (
-                            <div className="dog" key={index} onClick={() => {setEachDog(member) ; console.log('diggie set: ' , daycareData[1])}}>
+                            <div key={index} onClick={() => {setEachDog(member) }}>
                                 <Link to="/individualdog">
-                                <EachOwner
-                                setIndex={() => setCklickedIndex(index)}
-                                index={index}
-                                list={daycareData}
-                                owner={member.owner} />
+                                <EachOwner owner={member.owner} />
                                 </Link>
                             </div>
                         );

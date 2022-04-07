@@ -1,4 +1,4 @@
-import './welcomeScreen.css';
+import './welcome.css';
 import react from 'react';
 import {Link} from 'react-router-dom';
 
@@ -32,7 +32,37 @@ const Welcome = ({fetchDogData}) => {
                 <button className="buttons" onClick={fetchDogData}>Absent Dogs</button>
             </Link>
 
-           
+           <div className="wel">
+
+               <h2> Welcome to  Bark Away Doggie DayCare </h2>
+
+               <div class="boo">
+                  
+                  <img src={'https://img.icons8.com/doodle/344/dog.png'} alt="GOD" className="box"/>
+
+                  </div>
+                  
+              <div className="par"> 
+              <p> Thank you for choosing  Doggie Day Care for your
+active dog’s well-being and happiness. We hope that we will have a long
+lasting and healthy relationship with you and your pet. </p>
+                  </div> 
+
+                  
+                
+                  
+                
+                  <div class="boo1">
+                  
+                  <img src={'https://img.icons8.com/external-flaticons-lineal-color-flat-icons/344/external-dog-in-the-wild-flaticons-lineal-color-flat-icons-2.png'} alt="GOD" className="box1"/>
+                  
+                  </div>
+
+                   
+
+
+
+           </div>
          
         </div>
     );
