@@ -1,5 +1,5 @@
 
-@media (min-width: 1020px) {
+@media (min-width: 100px) {
     .cardContainer div{
         grid-template-columns: repeat(5, 1fr);
         align-items: center;
