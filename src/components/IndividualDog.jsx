@@ -8,15 +8,15 @@ const IndividualDog = ({dog}) => {
    
 
     return (
-        <div  className="dogBox">
+        <div  className='dogBox'>
 
-        <img className="profpic1" src={dog.img}
+        <img className='profpic1'  src={dog.img}
             alt={"The dog "}
             width="200vw"
             height="200vw">
         </img>
 
-            <div className="doggieCard">
+            <div className='doggieCard'>
                 <p>Name: {dog.name}</p>
                 <p>Sex: {dog.sex}</p>
                 <p>Age: {dog.age}</p>

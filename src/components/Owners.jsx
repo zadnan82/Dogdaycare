@@ -9,7 +9,7 @@ const Owners = ({daycareData, setEachDog}) => {
 
 
     return (
-        <div className="cardContainer">
+        <div className='cardContainer'>
 
                 <div >
                     {daycareData && daycareData.map((member, index) => {

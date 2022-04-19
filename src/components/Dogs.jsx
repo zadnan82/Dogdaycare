@@ -8,13 +8,13 @@ const Dogs = ({ daycareData, setEachDog}) => {
   
   
     return (
-        <div className="cardContainer">
+        <div className='cardContainer'>
 
                 <div >
-                    {daycareData && daycareData.map((member) => {
+                    {daycareData && daycareData.map((member, index) => {
                         
                         return (
-                            <div  onClick={() => {setEachDog(member)}}>
+                            <div key={index}  onClick={() => {setEachDog(member)}}>
                                 <Link to="/individualdog">
                                 <DogCard dog={member} />
                                 </Link>

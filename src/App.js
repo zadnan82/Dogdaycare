@@ -23,13 +23,17 @@ function App() {
 
         setDaycareData(data);
 
+       
+
       })
   }
 
 
+
+
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className='App'>
+      <header className='App-header'>
         <main >
           <Router>
 
@@ -38,7 +42,7 @@ function App() {
             <Routes>
 
               <Route exact path="/" element={
-                <Welcome fetchDogData={() => fetchDogData()} />} />
+                <Welcome fetchDogData={() => fetchDogData()} />}  />
 
 
               <Route path="/dogs" element={

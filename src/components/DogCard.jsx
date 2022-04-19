@@ -8,9 +8,9 @@ const DogCard = ({ dog}) => {
     return (
         <div >
         
-            <div className="dogInfo">
+            <div className='dogInfo'>
            
-            <img className="profpic" src={dog.img}
+            <img className='profpic' src={dog.img}
                 alt={"The dog"}
                 width="60vw"
                 height="60vw">
